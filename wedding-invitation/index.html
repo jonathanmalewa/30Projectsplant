@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Park & Dami Wedding</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam&family=Work+Sans:wght@100;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- simply Countdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <!-- Bootsrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!-- library Google Maps -->
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+    <!-- Script Google Maps -->
+    <script>
+      // fungsi initialize untuk mempersiapkan peta
+      function initialize() {
+        var propertiPeta = {
+          center: new google.maps.LatLng(
+            2.1507886274789922,
+            117.49622452321478
+          ),
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+        };
+
+        var peta = new google.maps.Map(
+          document.getElementById("googleMap"),
+          propertiPeta
+        );
+      }
+
+      // event jendela di-load
+      google.maps.event.addDomListener(window, "load", initialize);
+    </script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Section dashboard -->
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 margin-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <main>
+        <h4>Kepada Bapak/Ibu/Saudara/i</h4>
+        <h1>
+          Park Soe Joon <br />& <br />
+          Kim Dami
+        </h1>
+        <p>Akan Melangsungkan resepsi pernikahan dalam:</p>
+        <div class="simply-countdown"></div>
+        <a href="#home" class="btn btn-lg mt-4">Lihat Undangan</a>
+      </main>
+    </section>
+
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Jono</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Jono</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#galery">Galery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara Pernikahan</h2>
+            <h3>Diselenggarakan pada 20 November 2023 di Berau, Kaltim</h3>
+            <p>
+              Oleh Karena itu, dengan segala hormat, kami bermaksud untuk
+              Mengundang Bapak/Ibu, Saudara/i, untuk hadir pada acara pernikahan
+              kami.
+            </p>
+          </div>
+        </div>
+
+        <div class="row couple mt-5">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Park Seo Joon</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Temporibus cupiditate atque neque, itaque tenetur velit?
+                </p>
+                <p>
+                  Putra dari Bpk.lorem <br />
+                  dan <br />
+                  Ibu Ipsum
+                </p>
+              </div>
+              <div class="col-4">
+                <img
+                  src="img/Park_Seo-Joon-TCOE-GV.jpg"
+                  alt="jonashii"
+                  class="img-responsive rounded-circle"
+                  style="max-width: 400px; max-height: 400px"
+                />
+              </div>
+            </div>
+          </div>
+          <span class="heart">
+            <i class="bi bi-heart-fill"></i>
+          </span>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="img/damiss.jpg"
+                  alt="DamiShhi"
+                  class="img-responsive rounded-circle"
+                  style="max-width: 400px; max-height: 400px"
+                />
+              </div>
+              <div class="col-8">
+                <h3>Kim Dami</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Temporibus cupiditate atque neque, itaque tenetur velit?
+                </p>
+                <p>
+                  Putra dari Bpk.Ipsum <br />
+                  dan <br />
+                  Ibu Lorem
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info -->
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="alamat text-light fs-10">
+              Alamat: Gereja Katholik Santo Eugenius. <br />
+              Jl. APT. Pranoto No.766, Karang Ambun, Kec. Tj. Redeb, Kabupaten
+              Berau, Kalimantan Timur 77315
+            </p>
+            <div
+              id="googleMap"
+              class="card-group"
+              style="width: 100%; height: 380px"
+            ></div>
+            <p class="text-light my-4 fs-6 fw-lighter">
+              "Diharapkan untuk tidak salah alamat dan tanggal. bila sampai
+              ditujuan namun tidak ditemukan tanda-tanda sedang berlangsung
+              pernikahan, bisa jadi Anda salah jadwal, atau salah tempat"
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md col-10"></div>
+        </div>
+      </div>
+    </section>
+
+    <audio controls autoplay>
+      <source
+        src="music/y2mate.com - MV Suzy 수지  I Love You Boy While You Were Sleeping OST Part4 당신이 잠든 사이에 OST Part4.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2023, // required
+        month: 12, // required
+        day: 27, // required
+        hours: 15, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "Hari", plural: "Hari" },
+          hours: { singular: "Jam", plural: "Jam" },
+          minutes: { singular: "Menit", plural: "Menit" },
+          seconds: { singular: "Detik", plural: "Detik" },
+        },
+      });
+    </script>
+  </body>
+</html>
