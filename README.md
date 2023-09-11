@@ -5,3 +5,4 @@ Project 1
 -  Apliasi Cuaca(HTML, CSS, Javascript, openWeatherAPI )
 -  Wedding Invitation (HTML, CSS, Bootstrap)
 -  Scroll Animasi (HTML, CSS, Javascript)
+-  TodoList (HTML, CSS, Javascript)
